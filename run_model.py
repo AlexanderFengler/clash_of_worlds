@@ -61,12 +61,15 @@ def run_subj_model(df_subj, model_idx, mode,
         start_t = time()
         if mode == 'navarro':
             model_ = hddm.HDDM(df_subj,
-                               include = include)
+                               include = include,
+                               p_outlier = 0.0,
+                               informative = False)
 
         if mode == 'lan':
             model_ = hddm.HDDMnn(df_subj,
                                  model = 'ddm',
-                                 include = include)
+                                 include = include,
+                                 p_outlier = 0.0)
             
         db_file_name = save_folder + '/' + mode + '_db_chain_' + str(chain) + '_' + model_idx + '_subj_' + str(subj_idx) + '.db'
         model_file_name = save_folder + '/' + mode + '_model_chain_' + str(chain) + '_' + model_idx + '_subj_' + str(subj_idx) + '.pickle'
