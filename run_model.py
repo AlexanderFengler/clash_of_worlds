@@ -1,6 +1,5 @@
 # Load modules
 import hddm
-import tensorflow as tf
 import matplotlib
 from matplotlib import pyplot as plt
 import numpy as np
@@ -12,7 +11,6 @@ from copy import deepcopy
 import os
 import pickle
 import argparse
-import yaml as yml
 from multiprocessing import Pool
 from functools import partial
 
