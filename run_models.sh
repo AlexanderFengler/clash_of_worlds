@@ -8,7 +8,7 @@ parallel=1
 for model_idx in "${model_idxs[@]}"
 do  
     echo "passed"
-    for mode in "${mode[@]}"
+    for mode in "${modes[@]}"
         do
         echo "passed inner"
         data="data/parameter_recovery/param_recov_dataset_$model_idx.pickle"
