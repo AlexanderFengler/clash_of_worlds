@@ -9,8 +9,8 @@ for model_idx in "${model_idxs[@]}"
 do  
     echo "passed"
     for mode in "${mode[@]}"
-        echo "passed inner"
         do
+        echo "passed inner"
         data="data/parameter_recovery/param_recov_dataset_$model_idx.pickle"
         save_folder="hddm_models/$model_idx/"
 
