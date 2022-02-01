@@ -1,4 +1,4 @@
-model_idxs=("ddm" "angle" "ornstein" "weibull")
+model_idxs=("ddm" "angle")
 modes=("navarro" "lan")
 n_mcmc=2000
 n_burn=500
@@ -21,5 +21,5 @@ for model_idx in "${model_idxs[@]}"
                                              --n_burnin $n_burn \
                                              --n_chains $n_chains \
                                              --parallel $parallel
-            done 
+            done
     done
