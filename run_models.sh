@@ -1,4 +1,4 @@
-model_idxs=("ddm" "angle")
+model_idxs=("ornstein" "weibull")
 modes=("navarro" "lan")
 n_mcmc=2000
 n_burn=500
